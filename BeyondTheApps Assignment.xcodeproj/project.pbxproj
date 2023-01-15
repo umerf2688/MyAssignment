@@ -16,6 +16,9 @@
 		651F85392973F588003A66AA /* BeyondTheApps_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651F85382973F588003A66AA /* BeyondTheApps_AssignmentTests.swift */; };
 		651F85432973F588003A66AA /* BeyondTheApps_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651F85422973F588003A66AA /* BeyondTheApps_AssignmentUITests.swift */; };
 		651F85452973F588003A66AA /* BeyondTheApps_AssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651F85442973F588003A66AA /* BeyondTheApps_AssignmentUITestsLaunchTests.swift */; };
+		651F85522974191C003A66AA /* ImageEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651F85512974191C003A66AA /* ImageEditingViewController.swift */; };
+		651F855429742069003A66AA /* VideoEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651F855329742069003A66AA /* VideoEditingViewController.swift */; };
+		651F855629742A4D003A66AA /* Drift.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 651F855529742A4D003A66AA /* Drift.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		651F853E2973F588003A66AA /* BeyondTheApps AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BeyondTheApps AssignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		651F85422973F588003A66AA /* BeyondTheApps_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheApps_AssignmentUITests.swift; sourceTree = "<group>"; };
 		651F85442973F588003A66AA /* BeyondTheApps_AssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheApps_AssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		651F85512974191C003A66AA /* ImageEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditingViewController.swift; sourceTree = "<group>"; };
+		651F855329742069003A66AA /* VideoEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditingViewController.swift; sourceTree = "<group>"; };
+		651F855529742A4D003A66AA /* Drift.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Drift.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +108,11 @@
 				651F85212973F585003A66AA /* AppDelegate.swift */,
 				651F85232973F585003A66AA /* SceneDelegate.swift */,
 				651F85252973F585003A66AA /* ViewController.swift */,
+				651F85512974191C003A66AA /* ImageEditingViewController.swift */,
+				651F855329742069003A66AA /* VideoEditingViewController.swift */,
 				651F85272973F585003A66AA /* Main.storyboard */,
 				651F852A2973F587003A66AA /* Assets.xcassets */,
+				651F855529742A4D003A66AA /* Drift.mp4 */,
 				651F852C2973F587003A66AA /* LaunchScreen.storyboard */,
 				651F852F2973F587003A66AA /* Info.plist */,
 			);
@@ -232,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				651F852E2973F587003A66AA /* LaunchScreen.storyboard in Resources */,
+				651F855629742A4D003A66AA /* Drift.mp4 in Resources */,
 				651F852B2973F587003A66AA /* Assets.xcassets in Resources */,
 				651F85292973F585003A66AA /* Main.storyboard in Resources */,
 			);
@@ -259,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				651F85262973F585003A66AA /* ViewController.swift in Sources */,
+				651F855429742069003A66AA /* VideoEditingViewController.swift in Sources */,
 				651F85222973F585003A66AA /* AppDelegate.swift in Sources */,
+				651F85522974191C003A66AA /* ImageEditingViewController.swift in Sources */,
 				651F85242973F585003A66AA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,11 +452,11 @@
 				DEVELOPMENT_TEAM = 57J2YF5ZNU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BeyondTheApps Assignment/Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We want to use photo library to save images";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,11 +480,11 @@
 				DEVELOPMENT_TEAM = 57J2YF5ZNU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BeyondTheApps Assignment/Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We want to use photo library to save images";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
